@@ -1,0 +1,2 @@
+set_io led 39
+set_io rst 45
