@@ -61,7 +61,7 @@ module uart_tx (
                             bit_idx <= 0;
                             state   <= STOP;
                         end else begin
-                            bit_idx <= bit_idx + 1;
+                            bit_idx <= bit_idx + 1;a
                         end
                     end else begin
                         baud_cnt <= baud_cnt + 1;

@@ -1,15 +1,16 @@
 module top (
+input clk ,
     input  wire rst_n,    
     output wire uart_txd  
 );
 
-    wire clk ;
-    SB_HFOSC osc_int(
-        .CLKHFPU(1'b1),
-        .CLKHFEN(1'b1),
-        .CLKHF(clk)
-    );
-    defparam osc_int.CLKHF_DIV = "0b10";
+  //  wire clk ;
+ //   SB_HFOSC osc_int(
+    //    .CLKHFPU(1'b1),
+ //       .CLKHFEN(1'b1),
+   //     .CLKHF(clk)
+   // );
+  //  defparam osc_int.CLKHF_DIV = "0b10";
 
     wire [31:0] numbers [0:3];
     assign numbers[0] = 32'hDEAD_BEEF;
