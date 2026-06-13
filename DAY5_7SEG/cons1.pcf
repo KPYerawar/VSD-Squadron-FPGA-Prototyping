@@ -1,0 +1,10 @@
+set_io rst 3
+set_io out[7] 4
+set_io out[6] 6
+set_io out[5] 9
+set_io out[4] 10
+set_io out[3] 11
+set_io out[2] 12
+set_io out[1] 18
+set_io out[0] 19
+
