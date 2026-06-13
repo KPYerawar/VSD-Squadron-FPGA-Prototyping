@@ -1,0 +1,21 @@
+name: VSD Squadron iCE40 FPGA CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  flash_fpga:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout fresh code
+        uses: actions/checkout@v4
+
+      - name: Synthesize, PnR and Flash FPGA
+        run: |
+          cd DAY3_NEILIT_ASSIGNMENT
+          yosys -p "synth_ice40 -top encoder4x2 -json encoder.json" encoder4x2.v
+          nextpnr-ice40 --up5k --package sg48 --json encoder.json --pcf cons.pcf --asc encoder.asc
+          icepack encoder.asc encoder.bin
+          iceprog encoder.bin
