@@ -8,6 +8,7 @@ module tb_top;
 
     reg  clk;
     reg  rst_n;
+    
     wire uart_txd;
 
     // 12 MHz clock → period = 83.33 ns
