@@ -12,6 +12,7 @@ led[1] = variable1[2] | variable1[3] ;  end
 
 else begin 
 
+
 led[0] = variable2[1] | variable2[3] ;
 led[1] = variable2[2] | variable2[3] ;  end 
 end 
