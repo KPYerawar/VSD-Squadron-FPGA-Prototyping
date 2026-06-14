@@ -1,0 +1,3 @@
+set_io rst 37 
+set_io q_bar 36 
+set_io feqhalf 35 

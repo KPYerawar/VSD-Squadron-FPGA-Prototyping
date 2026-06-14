@@ -1,0 +1,12 @@
+set_io opcode[0] 37
+set_io opcode[1] 36
+set_io opcode[2] 35
+set_io out[0] 3
+set_io out[1] 4
+set_io out[2] 6
+set_io out[3] 9
+set_io out[4] 10
+set_io out[5] 11
+set_io out[6] 12
+set_io out[7] 39
+
