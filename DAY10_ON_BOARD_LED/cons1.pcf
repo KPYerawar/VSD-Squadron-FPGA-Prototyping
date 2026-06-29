@@ -1,0 +1,3 @@
+set_io led[0] 41
+set_io led[1] 40 
+set_io rst 37
