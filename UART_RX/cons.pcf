@@ -1,0 +1,5 @@
+set_io uart_rx_pin 37
+set_io led[0] 36
+set_io led[1] 45
+set_io led[2] 44
+set_io led[3] 42
